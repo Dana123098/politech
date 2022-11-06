@@ -1,0 +1,71 @@
+//Obliczanie średniej ocen studenta (zdanie iteracyjne typu dla).
+//Student kierunku Inżynieria logistykiw czasie sesji zimowej zdaje n
+//egzaminów. Obliczyć średnią ocen w sesji.
+
+//#include <stdio.h>
+//main()
+//{
+//    float ocena, avg;
+//    float total=0.0;
+//    int num;
+//    int petla;    //sterowanie pętlą
+//    
+//    printf("\n*** Obliczanie średniej ocen ***\n\n");
+//    printf("Ilu jest egzaminów?");
+//    scanf(" %d", &num);
+//    
+//    for (petla=1; petla<=num; petla++)
+//    {
+//        printf("Podaj ocenę z nich");
+//        scanf(" %f", &ocena);
+//        total += ocena;
+//    }
+//    avg = total / num;
+//    printf("\n\n Średnia ocen z danego przedmiotu wynosi: %.1f", avg);
+//    return 0;
+//}
+
+
+//Oblicz średnią arytmetyczną, dane wprowadź z klawiatury
+//i wyprowadź obliczoną wartość na monitor.
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//int main()
+//{ float a1, a2;
+//printf("Wpisz dwie liczby rzeczywiste (.../...)\n");
+//scanf("%f/%f", &a1, &a2);
+//printf("Obliczona srednia = %f \n", (a1+a2)/2);
+//system("pause");
+//return 0;
+//}
+//
+
+
+//Obliczanie średniej ocen studenta (zdanie iteracyjne typu dla).
+//Student kierunku Inżynieria logistykiw czasie sesji zimowej zdaje n
+//egzaminów. Obliczyć średnią ocen w sesji.
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//float avg;             
+//float s = 0.0;
+//int num;
+//int petla;
+//int main()
+//{
+//	printf("Ile egzaminow? \n");
+//	scanf("%d", &num);
+//	
+//	for(petla=1; petla<=num; petla++)
+//	{
+//		printf("Wpisz swoje oceny z egzaminów \n");
+//		scanf("%f", &avg); 
+//		s+=avg;
+//	}
+//	avg = s/num;
+//	printf("średnia ocena = %f \n", avg);
+//	system("pause");
+//	return 0;
+//	
+//}
