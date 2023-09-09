@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./s.css">
+    <link rel="stylesheet" href="./12.py">
+    <!DOCTYPE html>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Pochodnych</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Pochodnych</h1>
+        <label for="variable">Zmienna:</label>
+        <input type="text" id="variable" placeholder="Podaj zmienną">
+        <label for="expression">Przykład:</label>
+        <input type="text" id="expression" placeholder="Podaj przykład">
+        <button onclick="calculateDerivative()">Oblicz Pochodną</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateDerivative() {
+            const variable = document.getElementById("variable").value;
+            const expression = document.getElementById("expression").value;
+            const resultDiv = document.getElementById("result");
+
+            try {
+                const x = math.parse(variable).compile();
+                const derivative = math.derivative(expression, x);
+                resultDiv.innerHTML = `Pochodna ${expression} względem ${variable}: ${derivative}`;
+            } catch (error) {
+                resultDiv.innerHTML = "Błąd: Niepoprawne wyrażenie lub zmienna.";
+            }
+        }
+    </script>
+</body>
+</html>
