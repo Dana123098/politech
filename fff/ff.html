@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Zarządzania Pracownikami</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FORMULARZ ZARZĄDZANIA PRACOWNIKAMI</h1>
+        
+        <div class="section">
+            <h3>DANE PRACOWNIKA:</h3>
+            <label>Imię:</label>
+            <input type="text" name="imie">
+            <label>Nazwisko:</label>
+            <input type="text" name="nazwisko">
+            <label>Data zatrudnienia:</label>
+            <input type="date" name="data_zatrudnienia">
+            <label>Stanowisko:</label>
+            <input type="text" name="stanowisko">
+            <label>Wynagrodzenie:</label>
+            <input type="number" name="wynagrodzenie">
+            <label>Adres:</label>
+            <input type="text" name="adres_miasto" placeholder="Miasto">
+            <input type="text" name="adres_ulica" placeholder="Ulica">
+            <input type="text" name="adres_nr_domu" placeholder="Nr domu">
+            <input type="text" name="adres_nr_mieszkania" placeholder="Nr mieszkania">
+            <input type="text" name="adres_kod_pocztowy" placeholder="Kod pocztowy">
+        </div>
+
+        <div class="section">
+            <h3>PRZYDZIELONE OBOWIĄZKI:</h3>
+            <div class="obowiazek">
+                <label>Opis:</label>
+                <input type="text" name="obowiazek_opis">
+                <label>Data przydzielenia:</label>
+                <input type="date" name="obowiazek_data_przydzielenia">
+            </div>
+            <button onclick="addObowiazek()">Dodaj obowiązek</button>
+        </div>
+
+        <div class="section">
+            <h3>UMOWY:</h3>
+            <div class="umowa">
+                <label>Typ:</label>
+                <input type="text" name="umowa_typ">
+                <label>Data rozpoczęcia:</label>
+                <input type="date" name="umowa_data_rozpoczecia">
+                <label>Data zakończenia:</label>
+                <input type="date" name="umowa_data_zakonczenia">
+            </div>
+            <button onclick="addUmowa()">Dodaj umowę</button>
+        </div>
+
+        <button type="submit">Zapisz</button>
+    </div>
+
+    <script>
+        function addObowiazek() {
+            const container = document.querySelector('.section .obowiazek');
+            const newObowiazek = container.cloneNode(true);
+            container.parentNode.insertBefore(newObowiazek, container.nextSibling);
+        }
+
+        function addUmowa() {
+            const container = document.querySelector('.section .umowa');
+            const newUmowa = container.cloneNode(true);
+            container.parentNode.insertBefore(newUmowa, container.nextSibling);
+        }
+    </script>
+</body>
+</html>
