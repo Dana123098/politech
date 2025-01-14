@@ -1,0 +1,110 @@
+/* Ogólne stylowanie strony */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Stylowanie nawigacji */
+nav {
+    background-color: #ff6bcb;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stylowanie kart sekcji */
+.section-card {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+.section-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6bcb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.section-card a:hover {
+    background-color: #e858a8;
+}
+
+/* Stylowanie przycisku wylogowania */
+.logout-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #e84148;
+}
+
+/* Stylowanie dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .section-card {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}

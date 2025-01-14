@@ -1,0 +1,132 @@
+/* Stylowanie strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontener główny */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Nagłówek */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tabela użytkowników */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Przyciski akcji */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Formularz dodawania użytkownika */
+.add-user-form {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.add-user-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.add-user-form input, .add-user-form select, .add-user-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-user-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.add-user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl dla linku powrotu */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 12px;
+    }
+
+    .add-user-form input, .add-user-form select, .add-user-form button {
+        font-size: 12px;
+    }
+}

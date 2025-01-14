@@ -1,0 +1,91 @@
+/* Stylowanie strony koszyka */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Stylowanie przycisku usunięcia produktu */
+.remove-button {
+    background-color: #dc3545;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+/* Formularz usunięcia produktu */
+.remove-form {
+    margin: 0;
+    display: inline;
+}
